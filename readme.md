@@ -5,7 +5,7 @@
 ### Краткое описание:
 Программа способна добавлять топики, в которых содержаться сообщения
 от авторизованных пользователей. Авторизация и регистрация происходит,
-благодаря генерации jwt-токенов и соединения с базой данных(я использовал mysql).
+благодаря генерации jwt-токенов и соединения с базой данных(я использовал mysql, но перенастроил для IMDB: h2. Имя пользователя и пароль в application.properties).
 
 ### Тестирование:
 Удобно использовать POSTMAN или curl-запросы.
@@ -220,12 +220,12 @@ DELETE http://localhost:8080/example/topic
 ### Short description:
 The program is able to add topics that contain messages
 from authorized users. Authorization and registration takes place
-due to the generation of jwt tokens and connection to the database (I used mysql).
+due to the generation of jwt tokens and connection to the database (I used MySQL, but reconfigured for IMDB: h2. Username and password in application.properties).
 
 ### Testing:
 It is convenient to use POSTMAN or curl queries.
 
-[Download PostMan](https://www.postman.com/downloads )
+[Download PostMan](https://www.postman.com/downloads)
 
 ### What the user can do:
 
