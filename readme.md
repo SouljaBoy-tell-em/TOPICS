@@ -6,6 +6,7 @@
 Программа способна добавлять топики, в которых содержаться сообщения
 от авторизованных пользователей. Авторизация и регистрация происходит,
 благодаря генерации jwt-токенов и соединения с базой данных(я использовал mysql, но перенастроил для IMDB: h2. Имя пользователя и пароль в application.properties(sa:password). Чтобы подключиться к ней, нужно: http://localhost:8080/h2-console).
+Ограничился access-токеном, но всегда несложно добавить refresh-токен.
 
 ### Тестирование:
 Удобно использовать POSTMAN или curl-запросы.
@@ -221,6 +222,7 @@ DELETE http://localhost:8080/example/topic
 The program is able to add topics that contain messages
 from authorized users. Authorization and registration takes place
 due to the generation of jwt tokens and connection to the database (I used MySQL, but reconfigured for IMDB: h2. Username and password in application.properties).
+I limited myself to an access token, but it's always easy to add a refresh token.
 
 ### Testing:
 It is convenient to use POSTMAN or curl queries.
